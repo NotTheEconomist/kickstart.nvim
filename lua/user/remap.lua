@@ -34,7 +34,7 @@ vim.keymap.set("n", "<leader>P", "\"+P")
 vim.keymap.set("v", "<leader>p", "\"+p")
 
 -- Quick formatting through LSP
-vim.keymap.set("n", "<leader>f", function()
+vim.keymap.set("n", "<leader>F", function()
     vim.lsp.buf.format()
 end)
 
