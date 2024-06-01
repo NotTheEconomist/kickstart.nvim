@@ -19,10 +19,10 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
+vim.opt.background = "dark"
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
@@ -30,3 +30,9 @@ vim.opt.colorcolumn = "120"
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+vim.g.python3_host_prog="C:\\Users\\asmith\\AppData\\Local\\Programs\\Python\\Python311\\python3.EXE"
+
+-- Split to the right and down (instead of the default, left and up)
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
