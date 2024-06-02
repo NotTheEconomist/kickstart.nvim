@@ -13,6 +13,17 @@ return {
             local lspconfig = require('lspconfig')
             local cmp_nvim_lsp = require('cmp_nvim_lsp')
             local mason_lspconfig = require('mason-lspconfig')
+            mason_lspconfig.setup({
+                ensure_installed = { "pylsp" },
+            })
+            require("mason-tool-installer").setup({
+                ensure_installed = {
+                    "prettier",
+                    "stylua",
+                    "isort",
+                    "black",
+                },
+            })
             local telescope = require('telescope.builtin')
             vim.api.nvim_create_autocmd("LspAttach", {
                 group = vim.api.nvim_create_augroup("UserLspConfig", {}),
