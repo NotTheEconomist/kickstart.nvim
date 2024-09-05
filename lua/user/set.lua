@@ -35,3 +35,6 @@ vim.g.maplocalleader = "\\"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+-- Disable unused providers
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_ruby_provider = 0

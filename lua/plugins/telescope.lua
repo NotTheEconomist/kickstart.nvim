@@ -1,6 +1,6 @@
 return {
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.6',
+    branch = '0.1.x',
     dependencies = {
         'nvim-lua/plenary.nvim',
         {
@@ -13,7 +13,7 @@ return {
     config = function()
         require('telescope').setup({
             defaults = {
-                path_display = { "smart" }
+                path_display = { truncate = 3 }
             }
         })
         require('telescope').load_extension('fzf')
