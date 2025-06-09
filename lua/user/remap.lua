@@ -49,3 +49,6 @@ vim.keymap.set({ "n", "v", "x" }, "<leader>tp", vim.cmd.tabprev, { desc = "Prev 
 -- Indent/dedent in visual mode
 vim.keymap.set("v", "<", "<gv", { noremap = true, silent = true })
 vim.keymap.set("v", ">", ">gv", { noremap = true, silent = true })
+
+-- Toggle wordwrap
+vim.keymap.set("n", "<leader>ww", "<cmd>set wrap!<CR>", { desc = "Toggle word wrap" })
