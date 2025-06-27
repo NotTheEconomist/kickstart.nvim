@@ -1,6 +1,6 @@
 vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
@@ -26,6 +26,7 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
+vim.opt.cursorline = true
 vim.opt.colorcolumn = "120"
 
 vim.g.mapleader = " "
