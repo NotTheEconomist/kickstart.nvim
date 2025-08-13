@@ -13,7 +13,7 @@ return {
     config = function()
         require('telescope').setup({
             defaults = {
-                path_display = { truncate = 3 }
+                path_display = { "smart" }
             }
         })
         require('telescope').load_extension('fzf')
