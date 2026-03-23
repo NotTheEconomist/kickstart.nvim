@@ -53,6 +53,7 @@ return {
 					)
 					vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, make_opts("LSP: [c]ode [a]ctions"))
 					vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, make_opts("LSP: [r]e[n]ame"))
+					vim.keymap.set("i", "<C-space>", vim.lsp.completion.get, make_opts(nil))
 					vim.keymap.set("i", "<C-h>", function()
 						vim.lsp.buf.signature_help()
 					end, make_opts(nil))

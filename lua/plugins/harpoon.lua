@@ -9,9 +9,13 @@ return {
 
         vim.keymap.set("n", "<leader>hn", ui.nav_next, { desc = "[h]arpoon: [n]ext file" })
         vim.keymap.set("n", "<leader>hp", ui.nav_prev, { desc = "[h]arpoon: [p]rev file" })
-        vim.keymap.set("n", "<C-1>", function() ui.nav_file(1) end)
-        vim.keymap.set("n", "<C-2>", function() ui.nav_file(2) end)
-        vim.keymap.set("n", "<C-3>", function() ui.nav_file(3) end)
-        vim.keymap.set("n", "<C-4>", function() ui.nav_file(4) end)
+        vim.keymap.set("n", "<A-1>", function() ui.nav_file(1) end)
+        vim.keymap.set("n", "<A-2>", function() ui.nav_file(2) end)
+        vim.keymap.set("n", "<A-3>", function() ui.nav_file(3) end)
+        vim.keymap.set("n", "<A-4>", function() ui.nav_file(4) end)
+        vim.keymap.set("n", "<leader>1", function() ui.nav_file(1) end)
+        vim.keymap.set("n", "<leader>2", function() ui.nav_file(2) end)
+        vim.keymap.set("n", "<leader>3", function() ui.nav_file(3) end)
+        vim.keymap.set("n", "<leader>4", function() ui.nav_file(4) end)
     end
 }

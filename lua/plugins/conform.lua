@@ -9,6 +9,14 @@ return {
 				python = { "isort", "black" },
 				lua = { "stylua" },
 			},
+            formatters = {
+                isort = {
+                    stdin = true,
+                    -- This removes the "--line-ending" argument which doesn't play
+                    -- nice with pyproject or .editorconfig additions
+                    args = { "--stdout", "-", "--filename", "$FILENAME" },
+                }
+            },
 		})
 
 		vim.keymap.set("n", "<leader>F", function()

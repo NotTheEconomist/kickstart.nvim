@@ -14,10 +14,16 @@ return {
         require('telescope').setup({
             defaults = {
                 path_display = { "smart" }
-            }
+            },
+            pickers = {
+                diagnostics = {
+                    layout_strategy = "vertical"
+                }
+            },
         })
         require('telescope').load_extension('fzf')
         local builtin = require('telescope.builtin')
+        vim.keymap.set('n', '<leader>s<leader>', builtin.resume, { desc = "Resume previous [s]earch" })
         vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = "[s]earch [f]iles" })
         vim.keymap.set('n', '<leader>sF', function() builtin.find_files({ hidden = true }) end, { desc = "[s]earch [F]iles (including hidden files)"})
         vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = "[s]earch [b]uffers" })
