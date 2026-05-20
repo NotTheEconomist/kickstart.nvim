@@ -3,6 +3,7 @@ return {
     before_init = function(_, config)
         local root = config.root_dir or vim.fn.getcwd()
         -- Use venv interpreter, if available
+        local venv_helper = require("python_find_venv")
         local p = venv_helper.get_pylsp_cmd(root)
         config.cmd = p
 
